@@ -239,13 +239,13 @@ div.lunbo{
 }
 .lunbo_img li:first-child .lunbo_li_img{
     z-index: 1;
-    background: url(../img/index/banner/banner01.jpg) center no-repeat;
+    background: url(../img/index/banner/banner03.jpg) center no-repeat;
 }
 .lunbo_img li:nth-child(2) .lunbo_li_img{
-    background: url(../img/index/banner/banner02.jpg) center no-repeat;
+    background: url(../img/index/banner/banner04.jpg) center no-repeat;
 }
 .lunbo_img li:last-child .lunbo_li_img{
-    background: url(../img/index/banner/banner03.jpg) center no-repeat;
+    background: url(../img/index/banner/banner05.jpg) center no-repeat;
 }
 /* 轮播按钮 */
 div.lunbo .lunbo_tab{
@@ -623,6 +623,33 @@ div.quality_import,div.live_fresh,div.delicate_woman,div.live_science{
     margin: 20px auto 0;
 }
 /* 1 品质进口 */
+.quality_import .qua_show{
+    width: 860px;
+    height: 380px;
+    padding: 20px;
+    float: left;
+}
+.quality_import .qua_top{
+    width: 170px;
+    height: 421px;
+    float: left;
+}
+.quality_import .qua_tit{
+    height: 47px;
+    display: block;
+}
+.qua_tit span:first-child{
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 26px;
+    color: #B77347;
+}
+.qua_tit span:nth-child(2){
+    font-size: 16px;
+    color: rgba(183,115,71,0.7);
+    padding-left: 10px; 
+}
 /* 2 甄选新鲜 */
 /* 3 精致女人 */
 /* 4 科技质感 */
