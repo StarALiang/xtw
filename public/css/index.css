@@ -1,8 +1,8 @@
 body, p, form, input, button, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6 {
-    margin: 0;  
+    margin: 0;
     padding: 0;
     list-style: none;
-} 
+}
 body, button, input, select, textarea {
     font: 12px "Microsoft YaHei",Helvetica Neue,tahoma,Arial,Verdana,"Hiragino Sans GB","\5b8b\4f53";
     color: #333;
@@ -37,14 +37,23 @@ div.hd_top_bar{
 div.hd_top_bar a:hover{
     color: #ff4040;
 }
+div.hd_top_bar img{
+    width: 18px;
+    display: inline-block;
+    margin-top: 5px; 
+}
 .hd_topbar_city{
     float: left;
     height: 30px;
-    padding-left: 10px;
+    padding: 0 10px;
     color: #666;
 }
-.hd_topbar_city:hover{
-    color: #ff4040;
+div.hd_top_bar img.top_vip{
+    width: 22px;
+}
+div.hd_top_bar img.top_dingdan{
+    width: 14px;
+    margin-top: 7px;
 }
 .hd_top_bar .hd_topbar_home{
     float: left;
@@ -144,17 +153,25 @@ div.hd_top_bar_bt .hd_header{
     border: 1px solid #ff4040;
 }
 .hd_top_bar_bt
-.hd_head_search button{
+.hd_head_search input:hover{
+    border: 1px solid #ff4040;
+}
+.hd_top_bar_bt
+.hd_head_search .hd_search_btn{
     position: absolute;
     top: 1px;
     right: 140px;
     border: 0;
     height: 38px;
-    width: 50px;
+    width: 60px;
     background: transparent;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     cursor: pointer;
+}
+.hd_top_bar_bt
+.hd_head_search .hd_search_btn img{
+    width: 24px;
 }
 .hotKeywordsShow{
     height: 19px;
@@ -169,6 +186,9 @@ div.hd_top_bar_bt .hd_header{
     color: #aaa;
     margin-right: 10px;
 }
+.hotKeywordsShow ul>li>a:hover{
+    color: #333;
+}
 /* 购物车 */
 .hd_mini_cart{
     position: absolute;
@@ -181,14 +201,16 @@ div.hd_top_bar_bt .hd_header{
     height: 20px;
     border: 1px solid #e2e2e2;
     border-radius: 100px;
-    padding: 9px 0;
-}
-.hd_mini_cart span{
     text-align: center;
     line-height: 20px;
+    padding: 9px 0;
+}
+.hd_mini_cart>a>img{
+    width: 20px;
+}
+.hd_mini_cart span{
     color: #333;
     font-size: 16px;
-    padding-left: 36px;
 }
 /* nav主导航 */
 .hd_header_nav{
@@ -206,16 +228,23 @@ div.hd_top_bar_bt .hd_header{
     z-index: 1;
     width: 140px;
     height: 38px;
+    text-align: center;
     color: #fff;
     background: #ff4040;
     margin-top: 2px;
 }
+.hd_header_nav .category-list-root img:first-child{
+    width: 16px;
+    margin: 11px 12px 0 0;
+}
 .hd_header_nav span{
     display: inline-block;
-    color: 16px;
     font-size: 16px;
     cursor: pointer;
-    margin-left: 38px; 
+}
+.hd_header_nav .category-list-root img:last-child{
+    width: 10px;
+    margin-top: 14px;
 }
 .hd_header_nav ul.nav-list{
     padding-left: 140px;
@@ -224,6 +253,9 @@ div.hd_top_bar_bt .hd_header{
 .hd_header_nav ul.nav-list>li{
     float: left;
     margin-left: 30px;
+}
+.hd_header_nav ul.nav-list li a:hover{
+    color: #ff4040;
 }
 /* banner部分 */
 div.lunbo{
@@ -434,6 +466,15 @@ div.single_con{
 .superSingle ul li+li .single_bottom .s_con .s_num .s_num_underline .s_num_line{
     margin-left: -6px;
 }
+.superSingle ul li+li a:hover{
+    width: 100%;
+    height: 100%;
+    color: #ff4040;
+}
+.superSingle ul li+li:hover{
+    transform: scale(1.06); 
+    box-shadow: 0 5px 31px 0 rgba(0,0,0,0.1);
+}
 /* 右侧固定小版块 */
 div.single_con .happy_summer{
     width: 100px;
@@ -470,6 +511,10 @@ div.single_con .happy_summer{
     background-color: #fff;
     text-align: center;
     line-height: 40px;
+}
+.happy_summer .h_gwc img{
+    width: 20px;
+    margin-top: 10px;
 }
 /* 楼2 超级品类/品牌 */
 div.brand_class_floor{
@@ -612,13 +657,11 @@ div.brand_class_floor .super_brand:first-child{
 /* 楼3 热门集合 */
 div.needLazyLoad{
     width: 100%;
-    border: 1px solid #f00;
 }
 /* 楼3 热门通用 */
 div.quality_import,div.live_fresh,div.delicate_woman,div.live_science{
     width: 1070px;
     height: 421px;
-    border: 1px solid #000;
     background-color: #fff;
     margin: 20px auto 0;
 }
@@ -627,11 +670,6 @@ div.quality_import,div.live_fresh,div.delicate_woman,div.live_science{
     width: 860px;
     height: 380px;
     padding: 20px;
-    float: left;
-}
-.quality_import .qua_top{
-    width: 170px;
-    height: 421px;
     float: left;
 }
 .quality_import .qua_tit{
@@ -650,32 +688,264 @@ div.quality_import,div.live_fresh,div.delicate_woman,div.live_science{
     color: rgba(183,115,71,0.7);
     padding-left: 10px; 
 }
+.qua_show .qua_show_con{
+    width: 900px;
+    height: 334px;
+    position: relative;
+}
+.qua_show .qua_show_con .qua_show_con_left{
+    width: 190px;
+    height: 334px;
+    float: left;
+}
+.qua_show .qua_show_con .qua_left_font_con{
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    width: 176px;
+    height: 90px;
+}
+.qua_show .qua_show_con .qua_left_font_con a{
+    float: left;
+    width: 74px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    border: 1px solid rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+}
+.qua_show .qua_show_con .qua_show_con_right{
+    width: 680px;
+    height: 334px;
+    float: left;
+}
+.qua_show .qua_show_con .qua_show_con_right>a{
+    float: left;
+}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks{
+    width: 334px;
+    height: 167px;
+    background-image: -webkit-linear-gradient(225deg,#fafaf9 0%,#faf7f6 100%);
+    background-image: -moz-linear-gradient(225deg,#fafaf9 0%,#faf7f6 100%);
+    background-image: -o-linear-gradient(225deg,#fafaf9 0%,#faf7f6 100%);
+    position: relative;
+}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks p{
+    margin-top: 40px;
+    color: #793a11;
+    font-size: 14px;
+    margin: 40px 0 0 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 150px;
+}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks .import_body{
+    margin-top: 5px;
+    color: #b77347;
+}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks div{
+    width: 78px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    border: 1px solid rgba(228,147,55,0.5);
+    font-size: 14px;
+    color: #e49337;
+    margin: 15px 0 0 30px;
+    overflow: hidden; 
+}
+.qua_show .qua_show_con .qua_show_con_right .import_snacks img{
+    position: absolute;
+    bottom: 30px;
+    right: 27px;
+    width: 110px;
+    height: 110px;
+}
+.qua_show .qua_show_con .qua_show_con_right .bursting{
+    width: 167px;
+    height: 167px;
+    position: relative;
+}
+.qua_show .qua_show_con .qua_show_con_right .bursting.br{
+    width: 166px;
+    border-right: 1px solid #f6f6f6;
+}
+.qua_show .qua_show_con .qua_show_con_right .bursting p{
+    margin: 15px 0 6px 15px;
+    width: 102px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+}
+.qua_show .qua_show_con .qua_show_con_right .bursting .burting_body{
+    margin-top: 0;
+    color: #999;
+}
+.qua_show .qua_show_con .qua_show_con_right .bursting img{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+/* 1.right */
+.quality_import .qua_top{
+    width: 169px;
+    height: 421px;
+    border-left: 1px solid #f6f6f6;
+    float: left;
+    position: relative;
+}
+.qua_top img:first-child{
+    width: 70px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.qua_top p{
+    width: 130px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 16px;
+    color: #333;
+    margin: 20px 0 0 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.qua_top .qua_top_font{
+    font-size: 14px;
+    color: #999;
+    margin-top: 7px;
+}
+.qua_top .qua_top_slideCon{
+    width: 90px;
+    height: 318px;
+    margin: 0 auto;
+}
+.qua_top .qua_top_slideCon ul a{
+    float: left;
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.07);
+    margin-top: 12px;
+    position: relative;
+}
+.qua_top .qua_top_slideCon ul a li img:first-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 40px;
+    height: 16px;
+}
+.qua_top .qua_top_slideCon ul a li div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 40px;
+    height: 16px;
+    font: bold 12px Tahoma;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+}
+.qua_top .qua_top_slideCon ul a li img:last-child{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 0;
+    width: 60px;
+    height: 60px;
+}
 /* 2 甄选新鲜 */
 /* 3 精致女人 */
 /* 4 科技质感 */
 /* 页脚部分 */
 div.ft_wrap{
     background-color: #fff;
-    border: 1px solid #f00;
 }
 /* 服务保障 */
 div.ft_footer_service{
     width: 1070px;
     height: 143px;
-    border: 1px solid #000;
     border-bottom: 1px solid #ebebeb;
     margin: 0 auto;
     padding: 30px 0;
     box-sizing: border-box;
 }
+.ft_footer_service .ft_footer_df{
+    display: flex;
+    justify-content: space-between; 
+}
+.ft_footer_service .ft_footer_df a{
+    display: inline-block;
+    width: 205px;
+}
+.ft_footer_service .ft_footer_df img{
+    float: left;
+    width: 66px;
+    height: 66px;
+}
+.ft_footer_service .ft_footer_df a>div{
+    float: right;
+    width: 112px;
+}
+.ft_footer_service .ft_footer_df a>div p:first-child{
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px; 
+}
+.ft_footer_service .ft_footer_df a>div p:last-child{
+    font-size: 14px;
+    color: #999;
+    line-height: 26px;
+}
 /* 服务连接 */
 div.ft_service_link{
     width: 1070px;
     height: 286px;
-    border: 1px solid #000;
     margin: 0 auto;
     padding: 20px 0;
     box-sizing: border-box;
+}
+.ft_service_link .ft_help_list{
+    float: left;
+    width: 780px;
+    padding-left: 20px;
+}
+.ft_service_link .ft_help_list ul{
+    float: left;
+    width: 175px;
+    padding: 0 10px;
+}
+.ft_service_link .ft_help_list ul li a{
+    color: #666;
+}
+.ft_service_link .ft_help_list ul li:first-child{
+    padding: 6px 0;
+    font: bold 14px "Misrosoft YaHei";
+    color: #666;
+}
+/* footer 二维码 begin */
+.ft_service_link .ft_code_wrap{
+    float: left;
+    width: 260px;
+    height: 100%;
+}
+.ft_service_link .ft_code_wrap .ft_mobile_code p{
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
 }
 /* 版权所有 */
 div.footer p{
