@@ -3,7 +3,7 @@ body, p, form, input, button, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     padding: 0;
     list-style: none;
 }
-body, button, input, select, textarea {
+body, button, input, select, textarea { 
     font: 12px "Microsoft YaHei",Helvetica Neue,tahoma,Arial,Verdana,"Hiragino Sans GB","\5b8b\4f53";
     color: #333;
     -webkit-font-smoothing: antialiased;
