@@ -7,7 +7,7 @@ body, button, input, select, textarea {
   font: 12px "Microsoft YaHei",Helvetica Neue,tahoma,Arial,Verdana,"Hiragino Sans GB","\5b8b\4f53";
   color: #333;
   -webkit-font-smoothing: antialiased;
-}
+} 
 body {
   background-color: #f5f5f5;
 }
