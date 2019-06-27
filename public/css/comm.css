@@ -1,0 +1,37 @@
+body, p, form, input, button, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body, button, input, select, textarea {
+  font: 12px "Microsoft YaHei",Helvetica Neue,tahoma,Arial,Verdana,"Hiragino Sans GB","\5b8b\4f53";
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background-color: #fff;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  text-decoration: none;
+  color: #ff4040;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+button{
+  outline:none;
+}
+.wrap{
+  margin: 0 auto;
+  width: 1070px;
+}
+.clearfix:after {
+  content:""; 
+  display: block; 
+  clear:both; 
+}

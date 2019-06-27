@@ -1,0 +1,157 @@
+*{margin:0;padding:0;list-style:none;}
+a{
+  text-decoration:none;
+  color:#333;
+}
+body, button, input, select, textarea {
+  font:12px Arial,Helvetica,sans-serif;
+  color:#333;
+}
+/*页头*/
+#header{
+  height:82px;
+  box-sizing:border-box;
+  border:1px solid #e1e1e1;
+  background:#fff;
+  padding:16px;
+}
+.logo{
+  float:left;
+  margin-left:100px;
+}
+.logo>img{
+  height:55px;
+}
+.logo-title{
+  color:#4f4d4e;
+  font-size:26px;
+  float:left;
+  margin-top:14px;
+}
+.regist_header_right{
+  line-height:12px;
+  font:12px "SimSun";
+  color:#999;
+  margin-right:100px;
+}
+.regist_header_right .hd_menu{
+  float:right;
+  color:#333;
+  padding:0 24px 0 6px;
+  margin-left:38px;
+}
+.regist_header_right span{
+  float:right;
+}
+a.blue_link{
+  color:#06c; 
+}
+/*内容 登录框*/
+#container{
+  width:980px;
+  height:403px;
+  margin:26px auto 0;
+}
+div.mod_left_banner{
+  width:510px;
+  height:315px;
+  margin-top:45px;
+  float:left;
+}
+div.mod_login_wrap{
+  float:right;
+  width:330px;
+  padding:45px 35px 0 35px;
+}
+div.clearfix{
+  width:330px;
+  height:30px;
+  margin:5px 0;
+}
+div.clearfix>h3{
+  float:left;
+  font-size:15px;
+  color:#666;
+  line-height:30px;
+}
+div.clearfix>a{
+  float:right;
+  line-height:30px;
+  color:#06c;
+}
+div.y_same_item{
+  position:relative;
+  width:328px;
+  height:50px;
+  border:1px solid #dedede;
+  border-radius:3px;
+  margin-bottom:10px;
+}
+.mod_login_wrap input{
+  width:288px;
+  height:20px;
+  margin-top:15px;
+  padding:0px 20px;
+  border:0;
+  outline:0;
+  font-size:14px;
+  line-height:20px;
+  color:#666;
+}
+div.y_same_item>.y_same_label{
+  position:absolute;
+  left:20px;
+  top:15px;
+  font-size:14px;
+  color:#666;
+  transition:all 0.2s linear;
+}
+div.auto_login{
+  width:330px;
+  height:24px;
+  margin:10px 0;
+  line-height:24px;
+  color:#666;
+}
+div.auto_login>input{
+  float:left;
+  width:13px;
+  height:13px;
+  margin:5px 4px 0;
+}
+div.auto_login>span{
+  float:right;
+}
+div.login-btn>button{
+  width:330px;
+  height:52px;
+  border:0;
+  border-radius:3px;
+  background:#ff3c3c;
+  font:16px "Microsoft YaHei";
+  color:#fff;
+  line-height:52px;
+}
+div.joint_landing_wrap{
+  width:330px;
+  height:96px;
+}
+div.joint_landing_wrap>p{
+  padding:15px 0;
+  color:#666;
+}
+div.joint_landing_wrap>a{
+  float:right;
+  line-height:34px;
+  color:#999;
+}
+/*页尾*/
+#footer{
+  width:980px;
+  margin:20px auto 0;
+  text-align:center;
+}
+#footer>a{
+  margin:0 8px;
+  color:#333;
+}
